@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- ng-app bounds the html to the module created-->
+<html ng-app="myFirstApp">
+    <head>
+        <meta charset='utf-8'>
+        <script src='angular.min.js'></script>
+        <script src='app.js'></script>
+        <title>My First Angular App</title>
+    </head>
+
+    <body> 
+        <h1>My first AngularJS App</h1>
+        <!--everything in this div is controlled by myfirstcontroller-->
+        <div ng-controller='MyFirstController'>
+            <!--binds the value of the input to the scope.name value: changing it changes 
+            the value of the variable scope.name-->
+            <input type="text" ng-model="name">
+            {{name}}
+        </div>
+    </body>
+</html>
